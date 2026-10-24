@@ -50,6 +50,8 @@ jobs:
 
           if ($env:TEST_FILE) {
             $testArgs += $env:TEST_FILE
+          }else {
+            $testArgs += "tests/LoginPage.spec.js"
           }
 
           if ($env:GREP) {
